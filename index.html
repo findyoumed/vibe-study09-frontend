@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Todo App</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <h1>My Tasks</h1>
+      <p class="subtitle">Stay organized and productive</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <input type="text" id="todo-input" placeholder="What needs to be done?" aria-label="New Todo">
+        <button id="add-btn" class="primary-btn">Add Task</button>
+      </section>
+
+      <section class="list-section">
+        <div class="list-header">
+          <span id="todo-count">0 tasks remaining</span>
+          <button id="clear-all-btn" class="text-btn">Clear All</button>
+        </div>
+        <ul id="todo-list">
+          <!-- Todo items will be injected here -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
